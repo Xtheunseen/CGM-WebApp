@@ -2,8 +2,8 @@ from typing import List
 from datetime import datetime
 from dataclasses import dataclass
 
-@dataclass
-class Reading(frozen = True):
+@dataclass(frozen=True)
+class Reading:
     glucoseLevel : float
     timeTaken : datetime
 
@@ -11,8 +11,8 @@ class Reading(frozen = True):
 class GlucoseSeries:
     series : List[Reading]
 
-@dataclass
-class Event(frozen = True):
+@dataclass(frozen=True)
+class Event:
     event_type : str
     timeTaken : datetime
 
