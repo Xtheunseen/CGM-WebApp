@@ -22,11 +22,15 @@ def calculate_trend(series: GlucoseSeries):
         return "qr"  #quick rise
     elif avgChange >= 0.06 and avgChange < 0.11:
         return "r" #rise
-    elif avgChange < 0.06 and avgChange > -0.06:
+    elif avgChange >= 0.03 and avgChange <0.06:
+        return "gr" #gentle rise 
+    elif avgChange < 0.03 and avgChange > -0.03:
         return "n" #normal
-    elif avgChange < -0.06 and avgChange > -0.11:
+    elif avgChange <-0.03 and avgChange >= -0.06:
+        return "gf" #gentle fall
+    elif avgChange < -0.06 and avgChange >= -0.11:
         return "f" #fall
-    elif avgChange < -0.11 and avgChange > -0.17:
+    elif avgChange < -0.11 and avgChange >= -0.17:
         return "qf" #quick fall
     elif avgChange < -0.17:
         return "vqf" # very quick fall

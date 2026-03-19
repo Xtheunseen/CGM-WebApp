@@ -1,7 +1,7 @@
 from app.models.cgm import GlucoseSeries
 from datetime import datetime, timedelta
 
-HIGH = 10.0
+HIGH = 10.00
 
 
 def timeAboveRange(series: GlucoseSeries):

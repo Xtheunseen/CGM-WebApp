@@ -7,12 +7,12 @@ trendInfluence = 0.2
 noiseStdDev = 0.2
 
 # Event schedule (in 5‑min indices)
-mealTimes = [9*12, 16*12]      # 08:00, 13:00, 17:00
-exerciseTimes = [10*12, 12*12]               # 10:00, 12:00 
+mealTimes = [8*12, 13*12, 17*12]      # 08:00, 13:00, 17:00
+exerciseTimes = [12*12]               # 10:00, 12:00 
 
 # Incremental effect parameters
-mealAmplitude = 0.50
-mealTau = 2
+mealAmplitude = 0.70
+mealTau = 3
 exerciseAmplitude = 0.07
 exerciseTau = 18
 

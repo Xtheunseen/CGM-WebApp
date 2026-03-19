@@ -15,7 +15,7 @@ def calculateFromTime(readings: list[Reading], time: datetime) -> list[str] | No
         return None
 
     # Use the 4 most recent readings including the target timestamp
-    selected_readings = readings[max(0, i - 3) : i + 1]
+    selected_readings = readings[max(0, i - 4) : i + 1]
 
     series = makeSeries(selected_readings)
 
